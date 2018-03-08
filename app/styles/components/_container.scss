@@ -1,0 +1,47 @@
+.container__header {
+  border-bottom: 1px solid $light-grey-border;
+  padding: 1rem;
+
+  label {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  > :last-child {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.container__message {
+  color: $light-color;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container__footer {
+  border-top: 1px solid $light-grey-border;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.carousel{
+  width: 100%;
+  .carousel-inner{
+    width: 100%;
+    .item{
+      height: 500px;
+      width: 100%;
+      img{
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}
+
+
+
+// .carousel-inner > .carousel-item > img{
+//   width:1000px !important;
+//   height:300px !important;
+// }
