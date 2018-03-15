@@ -21,7 +21,7 @@ export var PromoForm = React.createClass({
   },
   render: function () {
     return (
-      <div className="row margin-5">
+      <div className="row margin-5 promo-form">
         <div className="col-sm-12 col-md-4 col-lg-4"></div>
         <div className="col-sm-12 col-md-4 col-lg-4">
           <h3>Hey! What's your promo code?</h3>
