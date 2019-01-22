@@ -1,7 +1,6 @@
 import React from 'react';
-var {connect} = require('react-redux');
+import {connect} from 'react-redux';
 import Redeem from 'Redeem';
-var $ = require('jquery');
 
 export var RedeemWall = React.createClass({
   filterPromos: function () {
@@ -9,29 +8,17 @@ export var RedeemWall = React.createClass({
     console.log(promos);
     var filteredPromos = promos;
     console.log(filteredPromos);
-    // Filter by showCompleted
     filteredPromos = filteredPromos.filter((promo) => {
       return !promo.redeemed || showRedeemed;  // If we return true, that item is going to be in array & if we return false that item is going to be removed from array
     });
     console.log(filteredPromos);
     // Filter by store
     filteredPromos = filteredPromos.filter((promo) => {
-      var storeText = $(".promo-form").find("option[value='" + promo.storeName + "']").text();
+      var storeText = document.querySelector('div.promo-form option[value='+ promo.storeName +']').text;
       var text = storeText.toLowerCase();
       return searchText.length === 0 || text.indexOf(searchText) > -1;
     });
     console.log(filteredPromos);
-    // // Sort todos with non-completed first
-    // filteredPromos.sort((a, b) => {
-    //   if (!a.redeemed && b.redeemed) {
-    //     return -1; // a should come before b
-    //   } else if (a.redeemed && !b.redeemed) {
-    //     return 1; // a should come after b
-    //   } else {
-    //     return 0; // a is equal to b & there's no reason to re-sort them.
-    //   }
-    // });
-
     return filteredPromos;
   },
   render: function () {
