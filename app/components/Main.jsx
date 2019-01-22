@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from 'Nav';
-var {connect} = require('react-redux');
+import {connect} from 'react-redux';
 
 export var Main = (props) => {
   return (
