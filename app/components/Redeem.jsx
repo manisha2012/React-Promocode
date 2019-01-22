@@ -1,8 +1,7 @@
 import React from 'react';
-var {connect} = require('react-redux');
-var moment = require('moment');
+import {connect} from 'react-redux';
+import moment from 'moment';
 import * as actions from 'actions';
-var $ = require('jquery');
 
 export var Redeem = React.createClass({
   handleRedeem: function () {
@@ -13,7 +12,6 @@ export var Redeem = React.createClass({
   },
   render: function () {
     var {createdAt, redeemed, promoCode, storeName, redeemedAt, sharedBy, redeemedBy, billDate} = this.props;
-    var storeText = $("#promoForm").find("option[value='" + storeName + "']").text();
     var renderDate = () => {
       var message = 'Shared on ';
       var timestamp = createdAt;
