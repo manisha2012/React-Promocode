@@ -1,5 +1,5 @@
 import React from 'react';
-var {connect} = require('react-redux');
+import {connect} from 'react-redux';
 import PromoSearch from 'PromoSearch';
 import RedeemWall from 'RedeemWall';
 
