@@ -1,5 +1,5 @@
 import React from 'react';
-var {connect} = require('react-redux');
+import {connect} = from 'react-redux';
 import { Button } from 'react-bootstrap';
 
 export var Wall = () => {
