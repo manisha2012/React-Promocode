@@ -1,6 +1,6 @@
 import React from 'react';
-var {Link, IndexLink} = require('react-router');
-var {connect} = require('react-redux');
+import {Link, IndexLink} from 'react-router';
+import {connect} from 'react-redux';
 import * as actions from 'actions';
 
 export var PromoNav = React.createClass({
