@@ -1,6 +1,6 @@
 import React from 'react';
-var {connect} = require('react-redux');
-var {Link, IndexLink} = require('react-router');
+import {connect} from 'react-redux';
+import {Link, IndexLink} from 'react-router';
 import * as actions from 'actions';
 
 export var Login = React.createClass({
