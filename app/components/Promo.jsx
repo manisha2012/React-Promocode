@@ -1,5 +1,5 @@
 import React from 'react';
-var {connect} = require('react-redux');
+import {connect} from 'react-redux';
 import PromoNav from 'PromoNav';
 import PromoForm from 'PromoForm';
 import RedeemContainer from 'RedeemContainer';
